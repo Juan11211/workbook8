@@ -1,7 +1,11 @@
 "use strict"
 
+
+window.onload = () => {
+    setupPage();
+}
+
 function setupPage() {
-   
     const welcomeMsgEl = document.getElementById("welcomeMsg");
     const role = sessionStorage.getItem("Role");
     const textPEl = document.getElementById("textP");
@@ -17,5 +21,5 @@ function setupPage() {
     location.href = "./index.html";
   }
 
-  setupPage();
+
   
